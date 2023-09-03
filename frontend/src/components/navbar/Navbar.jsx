@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import logo from "../../img/navLogoFinal.png";
 import onCampusLogo from "../../img/onCampusLogo.png";
 import { Link } from "react-router-dom";
-import { AiOutlineAlignLeft, AiOutlineAlignRight } from "react-icons/ai";
+// import { AiOutlineAlignLeft, AiOutlineAlignRight } from "react-icons/ai";
 
 import "./Navbar.css";
 
