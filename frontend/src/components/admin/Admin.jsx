@@ -7,12 +7,15 @@ function Admin() {
   const [responses, setresponses] = useState([]);
   const getAssociates = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:5000/getAssociates", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://hult-prize.onrender.com/getAssociates",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       const resPonse = await response.json();
       console.log(resPonse);

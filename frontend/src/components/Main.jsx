@@ -6,6 +6,7 @@ import About from "./about/About";
 import Resources from "./resources/Resources";
 import Contact from "./contact/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Events from "./events/Events";
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
         <Route exact path="/resources" element={<Resources />} />
         <Route exact path="/admin" element={<Admin />} />
         <Route exact path="/contact" element={<Contact />} />
+        <Route exact path="/events" element={<Events />} />
 
         {/* <Register />
         <Resources />

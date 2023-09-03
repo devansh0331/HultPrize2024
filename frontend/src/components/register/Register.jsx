@@ -50,13 +50,16 @@ function Register() {
 
       if (errors.noError) {
         try {
-          const response = await fetch("http://127.0.0.1:5000/registrations", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(userData),
-          });
+          const response = await fetch(
+            "https://hult-prize.onrender.com/registrations",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(userData),
+            }
+          );
 
           const resPonse = await response.json();
           // console.log(resPonse);

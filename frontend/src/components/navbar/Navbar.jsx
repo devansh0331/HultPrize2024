@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 // import logo from "../../img/logoFinal.png"
 // import logo from "../../img/logoSuperFinal.png"
 import logo from "../../img/navLogoFinal.png";
 import onCampusLogo from "../../img/onCampusLogo.png";
 import { Link } from "react-router-dom";
+import { AiOutlineAlignLeft, AiOutlineAlignRight } from "react-icons/ai";
 
 import "./Navbar.css";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="nav">
       <div className="dFlexSB">
@@ -35,7 +41,7 @@ function Navbar() {
                 Resources &nbsp; &nbsp;<span className="colorPink"> |</span>
               </li>
             </Link>
-            <Link to="/">
+            <Link to="/events">
               <li>
                 Upcoming Events &nbsp; &nbsp;
                 <span className="colorPink"> |</span>
