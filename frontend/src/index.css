@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter&family=Lugrasimo&family=Orbitron&family=Pangolin&family=Poppins&display=swap");
+
+:root {
+  --btn-bg: #e6007f;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 90%;
+  margin: 0 auto;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(17, 17, 17, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white; */
+  font-family: "Poppins", sans-serif;
+}
+
+p::selection,
+span::selection,
+a::selection,
+img::selection,
+::selection,
+strong::selection {
+  background: #e6007f;
+  color: white;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+form input,
+select {
+  border: 2px solid var(--btn-bg);
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 1rem;
+  outline: none;
+  width: 23vw;
+}
+
+form select {
+  width: 25vw;
+}
+
+.dFlexSE {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  width: 100%;
+}
+.dFlexSB {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+button {
+  padding: 1rem;
+  font-size: 1rem;
+  width: 15vw;
+  box-shadow: 2px 2px 10px var(--btn-bg);
+  cursor: pointer;
+  font-weight: bold;
+  background: var(--btn-bg);
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+
+.colorPink {
+  color: var(--btn-bg);
+}
+
+.headerPink {
+  color: var(--btn-bg);
+  font-size: 2.3rem;
+}
+.subText {
+  text-align: justify;
+  padding-right: 2rem;
+}
+
+.subHeader {
+  line-height: 2.7rem;
+  font-size: 1.4rem !important;
+  font-weight: bold;
+  text-align: left;
+}
+
+.dFlexFdC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  .dFlexSE,
+  .dFlexSB {
+    flex-direction: column;
+    align-items: center !important;
+    margin: 0;
+  }
+
+  .dFlexSE > input,
+  .dFlexSE > select {
+    margin-top: 1rem;
+    width: 120%;
+    margin-left: -2rem;
+  }
+  form select {
+    width: 130% !important;
+  }
+  .subHeader {
+    font-size: 1.7rem;
+  }
+
+  .headerPink {
+    font-size: 2.3rem;
+  }
+}

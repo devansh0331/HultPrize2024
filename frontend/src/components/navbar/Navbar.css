@@ -1,0 +1,41 @@
+.nav {
+  width: 100%;
+  /* margin-top: -1rem; */
+  /* background: var(--btn-bg); */
+  overflow-x: hidden;
+}
+.navLeft {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navLeft img:nth-child(1) {
+  width: 5rem;
+  margin-right: 2.5rem;
+}
+.navLeft img:nth-child(2) {
+  width: 8rem;
+}
+.navRight {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navRight ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav ul a {
+  color: white;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+}

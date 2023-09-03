@@ -1,0 +1,35 @@
+.about {
+  width: 100%;
+  overflow-x: hidden;
+}
+.aboutLeft {
+  flex: 1;
+  /* width: 50%; */
+}
+
+.aboutRight {
+  flex: 1;
+  height: 100%;
+  /* margin-right: 1rem; */
+  /* width: 30%; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.aboutRight img {
+  margin-top: 3rem;
+  width: 35rem;
+}
+
+.dFlexSE {
+  align-items: flex-start !important;
+}
+
+@media screen and (max-width: 700px) {
+  .aboutLeft {
+    max-width: 100% !important;
+  }
+  .aboutRight img {
+    width: 25rem;
+  }
+}
