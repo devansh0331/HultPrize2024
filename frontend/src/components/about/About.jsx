@@ -14,7 +14,7 @@ function About() {
         <div style={{ marginTop: "3rem" }} className="dFlexSE">
           <div className="aboutLeft">
             <p className="subHeader">
-              <span className="headerPink">Hult Prize</span>
+              <span className="headerPink text-blue-700">Hult Prize</span>
             </p>
             <p className="subText">
               Hult Prize is a global, social, entrepreneurship movement which
